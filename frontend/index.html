@@ -51,7 +51,7 @@
                 if (response.ok) {
                     localStorage.setItem('token', data.token);
                     localStorage.setItem('user', JSON.stringify(data.user));
-                    window.location.href = 'dashboard.html';
+                    window.location.href = 'landing.html';
                 } else {
                     errorMsg.textContent = data.message;
                     errorMsg.style.display = 'block';

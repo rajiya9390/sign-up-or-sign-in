@@ -81,9 +81,9 @@ app.post('/login', async (req, res) => {
     }
 });
 
-// Protected Dashboard Endpoint
-app.get('/dashboard', verifyToken, (req, res) => {
-    res.json({ message: `Welcome to your dashboard, ${req.user.username}!` });
+// Protected Landing Page Endpoint
+app.get('/landing', verifyToken, (req, res) => {
+    res.json({ message: `Welcome to the protected landing page, ${req.user.username}!` });
 });
 
 // Logout
